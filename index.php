@@ -39,8 +39,8 @@ include_once("app.php");
                 <div class="mb-3">
                     <label for="answer" class="form-label">Answer 3</label>
                     <input type="text" id="answer3" name="answer3" size="20" maxlength="40"
-                           value="<?php echo $textPromt; ?>"
-                           placeholder="<?php echo $namePromt; ?>">
+                           value="<?php echo $answer3; ?>"
+                           placeholder="<?php echo $textPromt; ?>">
                 </div>
                 <div class="mb-3">
                     <label for="answer" class="form-label">Correct</label>
