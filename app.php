@@ -6,7 +6,7 @@ $text4 = "answer3:";
 $text5 = "correct:";
 
 // define variables and set to empty values
-$answer1 = $answer2 = $answer3 =  $question =  $correct = $namePromt = $message = "";
+$answer1 = $answer2 = $answer3 =  $question =  $correct = $textPromt = $message = "";
 // If the filds are empty
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $answer1 = filter_var($_POST["answer1"]);
@@ -15,16 +15,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $question = filter_var($_POST["question"]);
     $correct = filter_var($_POST["correct"]);
     if ($answer1 == "") {
-        $namePromt = "Please enter your answer1";
+        $textPromt = "Please enter your answer1";
     }
     if ($answer2 == "") {
-        $namePromt = "Please enter your answer2";
+        $textPromt = "Please enter your answer2";
     }
     if ($answer2 == "") {
-        $namePromt = "Please enter your answer3";
+        $textPromt = "Please enter your answer3";
     }
     if ($question == "") {
-        $emailPromt = "Please enter your question";
+        $textPromt = "Please enter your question";
     } else {
         //if the filds are not empty
         $message = "Question is save!";

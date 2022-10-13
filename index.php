@@ -20,33 +20,33 @@ include_once("app.php");
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="mb-3">
                     <label for="question" class="form-label">Question</label>
-                    <input type="text" id="text" name="question" size="20" maxlength="40"
+                    <input type="text" id="question" name="question" size="20" maxlength="40"
                            value="<?php echo $question; ?>"
-                           placeholder="<?php echo $emailPromt; ?>">
+                           placeholder="<?php echo $textPromt; ?>">
                 </div>
                 <div class="mb-3">
                     <label for="answer" class="form-label">Answer 1</label>
                     <input type="text" id="answer1" name="answer1" size="20" maxlength="40"
                            value="<?php echo $answer1; ?>"
-                           placeholder="<?php echo $namePromt; ?>">
+                           placeholder="<?php echo $textPromt; ?>">
                 </div>
                 <div class="mb-3">
                     <label for="answer" class="form-label">Answer 2</label>
                     <input type="text" id="answer2" name="answer2" size="20" maxlength="40"
                            value="<?php echo $answer2; ?>"
-                           placeholder="<?php echo $namePromt; ?>">
+                           placeholder="<?php echo $textPromt; ?>">
                 </div>
                 <div class="mb-3">
                     <label for="answer" class="form-label">Answer 3</label>
                     <input type="text" id="answer3" name="answer3" size="20" maxlength="40"
-                           value="<?php echo $answer3; ?>"
+                           value="<?php echo $textPromt; ?>"
                            placeholder="<?php echo $namePromt; ?>">
                 </div>
                 <div class="mb-3">
                     <label for="answer" class="form-label">Correct</label>
                     <input type="number" id="correct" name="correct" size="3" maxlength="40"
                            value="<?php echo $correct; ?>"
-                           placeholder="<?php echo $namePromt; ?>">
+                           placeholder="<?php echo $textPromt; ?>">
                     <input type="submit" id="submit" name="submit" value="Save">
                 </div>
                 <p>&nbsp;</p>
